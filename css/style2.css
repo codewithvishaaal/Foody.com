@@ -1,0 +1,252 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* navigation bar logo */
+#logo {
+    margin: 20px 26px;
+}
+
+#logo img {
+    margin: -9px 0px;
+    height: 47px;
+    width: 76px;
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Pushster', cursive;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    margin: -19px 26px;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: black;
+
+}
+
+/* home section       */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 290px;
+    padding: 10px 348px;
+}
+
+/* #home div {
+
+    margin-top: 180px;
+} */
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../img/background2.jpg) no-repeat center center/cover;
+    height: 391px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Pushster', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: -18px;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: brown;
+    margin-top: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* services section */
+section img {
+
+    height: 104px;
+    padding: -30px;
+}
+
+/* .services-container {
+    margin: 260px 1px;
+} */
+
+/* .box {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+    width: 25%;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 15px 24px;
+    background-color: rosybrown;
+
+} */
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    
+}
+
+#services {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+
+/* client section */
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+#client-section{
+    position: relative;
+    height: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/meal-2834549_1920.jpg) no-repeat center center/cover;
+    height: 265px;
+    width: 100%;
+    
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* form section  */
+#form-section {
+    height: 500px;
+    margin-top: 245px;
+}
+#form-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 116%;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: -1px;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+}
+
+#form input, #form textarea{
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 10px;
+
+}
+#form label{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 108px;
+}
+#send input{
+    border-radius: 8px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 174px;
+    cursor: pointer;
+}
+#form form{
+    width: 40%;
+}
